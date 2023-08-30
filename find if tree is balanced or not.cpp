@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<iostream>
+#include<cstdlib>
 struct Node{
 	int data;
 	struct Node *left;
@@ -42,10 +42,10 @@ struct Node *head;
 
 
     	if(height(head->left)-height(head->right)>=1 || height(head->left)-height(head->right)<=1){
-		printf("unbalanced");
+		cout<<"unbalanced";
 	}
 	else{
-		printf("balanced");
+		cout<<"balanced";
 	}
 
     
