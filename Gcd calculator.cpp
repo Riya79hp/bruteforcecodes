@@ -23,26 +23,11 @@ u++;}
 
 return maxt;
 }
-
-
-
-
-
-
 int main(){
     int a,b;
     cin>>a>>b;
    int x= gcd(a,b);
     cout<<"The gcd is:"<<x<<endl;
     cout<<"The lcm is:"<<(a*b)/x;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    return 0;
+     return 0;
 }
