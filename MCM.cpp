@@ -29,13 +29,4 @@ int main(){
 	v.push_back(4);
 	v.push_back(3);
  int x=matrixMultiplication(v,v.size());
-	cout<<x;
-	
-	
-	
-	
-	
-	
-	
-	
-}
+	cout<<x;}
