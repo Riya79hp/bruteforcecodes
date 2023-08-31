@@ -19,8 +19,6 @@ void swapsforbst(struct TreeNode*root){
 	if(root==NULL){
 		return ;
 	}
-	
-	
 	if(root->left != NULL && root->left->data>root->data){
 		 temp=root->data;
 		root->data=root->left->data;
@@ -38,15 +36,9 @@ void swapsforbst(struct TreeNode*root){
 	swapsforbst(root->right);
 	
 }
-
-
-
-
 int main() {
-
-	struct TreeNode* root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-    
-	root->data=1;
+struct TreeNode* root = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    root->data=1;
 	root->left=createNode(2);
 	root->right=createNode(3);
 	root->left->left=createNode(4);
@@ -54,9 +46,6 @@ int main() {
 	/*root->right->left=createNode(10);
 	root->right->right=createNode(11);*/
 	swapsforbst(root);
-   
-     cout<<k;
-    
-
-    return 0;
+    cout<<k;
+     return 0;
 } 
