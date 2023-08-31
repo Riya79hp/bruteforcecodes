@@ -28,26 +28,17 @@ int height(struct Node *root){
     }
     return h;
 }
-
-
-
-
 int main(){
-
 struct Node *head;
 	head=(struct Node *)malloc(sizeof(struct Node));
 	head->data=56;
 	head->left=create(3);
 	head->left->left=create(77);
-
-
-    	if(height(head->left)-height(head->right)>=1 || height(head->left)-height(head->right)<=1){
+if(height(head->left)-height(head->right)>=1 || height(head->left)-height(head->right)<=1){
 		cout<<"unbalanced";
 	}
 	else{
 		cout<<"balanced";
 	}
-
-    
 }
 	
