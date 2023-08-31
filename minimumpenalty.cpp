@@ -2,13 +2,9 @@
 #include <climits>
 #include<string>
 using namespace std;
-
-
 class Solution {
 public:
-
-
-    int bestClosingTime(string &customers) {
+  int bestClosingTime(string &customers) {
               string old=customers;
         int length=0;
         int no=0;
@@ -26,15 +22,12 @@ public:
            k=i;
           int c=0;
    while(k<length){
-			    customers[k] = 'N';
+	customers[k] = 'N';
                 k++;}
                 while(c<i){
                 customers[c]='Y';
                 c++;}
-				
-            
-            
-             for(int j=0;j<length;j++){
+	 for(int j=0;j<length;j++){
             if(customers[j]!=old[j]){
                 no++;
                 
@@ -49,22 +42,12 @@ public:
                 customers=old;
 
         }
-
-       
-
-    return min_index;}
+return min_index;}
 };
-
 int main(){
     Solution s;
     string customers="YYNY";
 	int q=s.bestClosingTime(customers);
-    
-    cout<<q;
-    
-    
-    
-    
-    
-    return 0;
+     cout<<q;
+ return 0;
 }
