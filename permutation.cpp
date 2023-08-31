@@ -21,8 +21,6 @@ void permutation(int arr[],int n,int fi){
 	
 	}
 }
-
-
 int main(){
 	int n;
 	cin>>n;
@@ -31,18 +29,5 @@ int main(){
 		cin>>arr[i];
 	}
  permutation(arr,n,0);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	return 0;
 }
