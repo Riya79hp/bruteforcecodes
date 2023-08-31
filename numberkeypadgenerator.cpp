@@ -47,14 +47,7 @@ void obtain_num(char a){
             }
         }
     }
-    
- 
-    
-    
 }
-
-
-
 int main() {
     int i,j;
     int n=0;
