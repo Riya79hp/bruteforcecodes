@@ -7,7 +7,7 @@ if(i==0){
 }
   int nottake=f(arr,i-1,k);
   int take=0;
-  if(arr[i]<k){
+  if(arr[i]<=k){
     take=f(arr,i,k-arr[i]);
   }
   return take+nottake;
